@@ -114,8 +114,13 @@
 	.navbar-nav {
 		text-align: center;
 	}
+
+	.carousel-item {
+		height: 100vh;
+		max-height: 400px;
+	}
 	.carousel-caption {
-		bottom: 125px;
+		bottom: 80px;
 	}
 	.carousel-caption h5 {
 		font-size: 17px;
@@ -136,6 +141,7 @@
 		margin-bottom: 30px;
 	}
 }
+
 
 /******* skillshop *******/
 

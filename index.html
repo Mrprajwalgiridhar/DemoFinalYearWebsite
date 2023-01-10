@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--divinectorweb.com-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Final-Year</title>
+	<link rel="icon" href="img/logo-modified-modified.png" type="image/icon type">
+
+	<!-- All CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins&display=swap" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-
-    <!--************************************************  Nav Bar Started  ********************************************************-->
+	
+	<!--************************************************  Nav Bar Started  ********************************************************-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
@@ -27,11 +35,28 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Home</a>
 					</li>
+
+          <!--*** Dropdown Menu ***-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SkillShop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Java</a>
+              <a class="dropdown-item" href="#">Python</a>
+              <a class="dropdown-item" href="#">Web Development</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div> -->
+          </li>
+
+          <!-- ************************ -->
+          <!-- <li class="nav-item">
+						<a class="nav-link" href="#skillshop">SkillShop</a>
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#portfolio">SkillShop</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#team">Team</a>
@@ -48,153 +73,55 @@
 
     <!--************************************************  Carousal Started  ********************************************************-->
 
-	<div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/img1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Book a free live class</h5>
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+		<div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="..." class="d-block w-100 img-fluid" src="img/img1.png">
+				<div class="carousel-caption">
+					<h5>Book a free live class</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
                         <p><a type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModalCenter">Book Class</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/img2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Always Dedicated</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="..." class="d-block w-100 img-fluid" src="img/img2.png">
+				<div class="carousel-caption">
+					<h5>Always Dedicated</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
                         <p><a class="btn btn-primary mt-3" href="#">Learn More</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/img4.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-              <p><a class="btn btn-primary mt-3" href="#">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    <!--************************************************  Carousal Ended  ********************************************************-->
-	
-
-	<!--************************************************  SkillShop Section Started  **************************************************-->
-    
-	<section class="skillshop section-padding" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header text-center pb-3">
-						<h2>Skill Shop We Offer</h2>
-						<p>Find online training and certifications right for you
-						</p>
-					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 col-md-12 col-lg-4">
-					<div class="card shadow p-2 mb-5 bg-white rounded text-light text-center bg-white pb-2">
-						<div class="card-body text-dark">
-							<div class="img-area"><img alt="" class="img-fluid" width="200px" src="./img/Javaskill.png"></div>
-							<h4 class="card-title font-weight-bold">JAVA</h4>
-							<p class="p-2">Live Classes <br>Only on weekends <br> Only 28 students per batch <br>No prior coding knowledge <br>required</p>
-                            <div class="price d-flex ">
-                                <p>₹ 2,899&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <button class="btn animate btn-primary text-light">Enroll</button>
-                            </div>
-                            
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-12 col-lg-4">
-					<div class="card shadow p-2 mb-5 bg-white rounded text-light text-center bg-white pb-2">
-						<div class="card-body text-dark">
-							<div class="img-area"><img alt="" class="img-fluid" width="200px" src="./img/Python logo.png"></div>
-							<h4 class="card-title ">PYTHON</h4>
-							<p class="p-2" >Live Classes <br>Only on weekends <br> Only 28 students per batch <br>No prior coding knowledge <br>required</p>
-                            <div class="price d-flex ">
-                                <p>₹ 2,899&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <button class="btn btn-primary text-light">Enroll</button>
-                            </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-12 col-lg-4">
-					<div class="card shadow p-2 mb-5 bg-white rounded text-light text-center bg-white pb-2">
-						<div class="card-body text-dark">
-							<div class="img-area"><img alt="" class="img-fluid" width="200px" src="./img/html logo.png"></div>
-							<h4 class="card-title">WEB</h4>
-							<p class="p-2" >Live Classes <br>Only on weekends <br> Only 28 students per batch <br>No prior coding knowledge <br>required</p>
-                            <div class="price d-flex ">
-                                <p>₹ 2,899&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <button class="btn btn-primary text-light">Enroll</button>
-                            </div>
-						</div>
-					</div>
+			<div class="carousel-item">
+				<img alt="..." class="d-block w-100 img-fluid" src="img/img4.png">
+				<div class="carousel-caption">
+					<h5>Third slide label</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+						<p><a class="btn btn-primary mt-3" href="#">Learn More</a></p>
 				</div>
 			</div>
-		</div>
-	</section>
-    
-    <!--************************************************  Portfolio Section Started  ********************************************************-->
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div>
+	<!--************************************************  Carousal Started  ********************************************************-->
 
-    <!--***********************************************  About Section Started  *******************************************************-->
-	
-    <section class="about section-padding" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-12 col-12">
-					<div class="about-img"><img alt="" class="img-fluid" src="./img/about.gif"></div>
-				</div>
-				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-					<div class="about-text">
-						<h2>Final Year is An High-Quality Training Platform
-						Services Ever.</h2><br>
-						<p>Motivated to transform and upskill collage students. Our Industry and real-world required based teaching 
-                           and training approach, will not only help students upskill but also grab the opportunities around them. We aim to provide job oriented cources at affordable price with best quality, providing coding knowledge especially to students from tire2 tier3, rural collage students and students from Non-IT branches
-                           <span id="dots">...</span><span id="more"> <br><br> We at FINAL-YEAR give our best to help students to gain knowledge, mentor them and also students can reach us for any doubts, confusion regarding their career, we are always there for them by providing free career counselling to help understand their queries and try our best to help and guide them.</span>
-                        </p><a class="btn btn-primary" onclick="myFunction()" id="myBtn">Learn More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    
-    <!--************************************************  About Section Ended  ********************************************************-->
-
-    <!--**********************************************  Learn Section Started  ********************************************************-->
+	<!--**********************************************  Learn Section Started  ********************************************************-->
     
     <section id="learn" class="p-3 bg-light">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
-              <img src="./img/Java.png" class="img-fluid" alt="" />
+              <img src="img/Java.png" class="img-fluid" alt="" />
             </div>
             <div class="col-md p-5">
               <h2>Learn The Fundamentals</h2>
               <p class="lead">
                 Learn leading programming languages like Java, Python and many more.
-               </p><p>
+               </p><p class="collapse active" id="collapseExample1">
                 Programming is using a language that a machine can understand in order to get it to perform various tasks. Computer programming is how we communicate with machines in a way that makes them function how we need. Get start your learning leading programming languages to build a good career.
               </p>
-              <a class="btn btn-secondary mt-3" >
-                <i class="bi bi-chevron-right"></i> Read More
-              </a>
+              <a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1" class="btn btn-secondary mt-3" ><i class="bi bi-chevron-right"></i> Read More</a>
             </div>
           </div>
         </div>
@@ -208,473 +135,482 @@
               <p class="lead">
                 Learn major Web development Softwares like HTML, CSS, JavaScript and Many More..
               </p>
-              <p>
+              <p class="collapse active" id="collapseExample2">
                 Web development gives you the opportunity to express yourself creatively on the internet. If you have an idea you would like to try as you discover your web dev skills, try it out. Web dev is a fun, creative experience.
               </p>
-              <a href="#" class="btn btn-light mt-3">
-                <i class="bi bi-chevron-right"></i> Read More
-              </a>
+              <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2"  class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
             </div>
             <div class="col-md">
-              <img src="./img/fundamentals.svg" class="img-fluid" alt="" />
+              <img src="img/fundamentals.svg" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-    <!--************************************************  Learn Section Ended  ********************************************************-->
+  <!--************************************************  Learn Section Ended  ********************************************************-->
 
-    <!--************************************************  Team Section Started  ********************************************************-->
+<!--************************************************  SkillShop Section Started  **************************************************-->
 
-	<section class="team section-padding" id="team">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header text-dark text-center pb-5">
-						<h2>Meet Our Team Members</h2>
-						<p>Meet the team bheind Final-Year</p>
+<section class="skillshop bg-light section-padding" id="skillshop">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-header text-center pb-3">
+					<h2>Skill Shop We Offer</h2>
+					<p>Find online training and certifications right for you
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-4">
+				<div class="card shadow p-2 mb-5 bg-white rounded text-light text-center bg-white pb-2">
+					<div class="card-body text-dark">
+						<div class="img-area"><img alt="" class="img-fluid" width="200px" src="img/Javaskill.png"></div>
+						<h4 class="card-title font-weight-bold">JAVA</h4>
+						<p class="p-2">Live Classes <br>Only on weekends <br> Only 28 students per batch <br>No prior coding knowledge <br>required</p>
+						<div class="price d-flex "><p>₹ 2,899 <small class="small text-muted"><s>3999</s></small></p></div>
+						<div class="details">
+							<button class="btn btn-primary mt-3">Details</button>
+						</div>
+						
+						
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center">
-						<div class="card-body">
-							<img alt="" class="profile img-fluid rounded-circle" src="./img/profile.jpg">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor</p>
-							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+			<div class="col-12 col-md-12 col-lg-4">
+				<div class="card shadow p-2 mb-5 bg-white rounded text-light text-center bg-white pb-2">
+					<div class="card-body text-dark">
+						<div class="img-area"><img alt="" class="img-fluid" width="200px" src="img/Python logo.png"></div>
+						<h4 class="card-title ">PYTHON</h4>
+						<p class="p-2" >Live Classes <br>Only on weekends <br> Only 28 students per batch <br>No prior coding knowledge <br>required</p>
+						<div class="price d-flex "><p>₹ 2,899 <small class="small text-muted"><s>3999</s></small></p></div>
+						<div class="details">
+							<button class="btn btn-primary mt-3">Details</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center">
-						<div class="card-body">
-							<img alt="" class="profile img-fluid rounded-circle" src="./img/profile.jpg">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor</p>
-							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i><i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center">
-						<div class="card-body">
-							<img alt="" class="profile img-fluid rounded-circle" src="./img/profile.jpg">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor</p>
-							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card text-center">
-						<div class="card-body">
-							<img alt="" class="profile img-fluid rounded-circle" src="./img/profile.jpg">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor</p>
-							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+			</div>
+			<div class="col-12 col-md-12 col-lg-4">
+				<div class="card shadow p-2 mb-5 bg-white rounded text-light text-center bg-white pb-2">
+					<div class="card-body text-dark">
+						<div class="img-area"><img alt="" class="img-fluid" width="200px" src="img/html logo.png"></div>
+						<h4 class="card-title">WEB</h4>
+						<p class="p-2" >Live Classes <br>Only on weekends <br> Only 28 students per batch <br>No prior coding knowledge <br>required</p>
+						<div class="price d-flex "><p>₹ 2,899 <small class="small text-muted"><s>3999</s></small></p></div>
+						<div class="details">
+							<button class="btn btn-primary mt-3">Details</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-    
-    <!--************************************************  Team Section Started  ********************************************************-->
+	</div>
+</section>
 
-    <!--************************************************  Accordian Started  ********************************************************-->
+<!--*********************************************  Skillshop Section Started  ********************************************************-->
 
-    <!-- Question Accordion -->
-    <section id="questions" class="p-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-        <div class="accordion accordion-flush" id="questions">
-          <!-- Item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-one"
-              >
-              What are the benefits of taking these courses?
-              </button>
-            </h2>
-            <div
-              id="question-one"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                In todays world everything is dependend on programming from creating a simple website to self-driving cars, this will
-                be your intoduction to the programming journey, by completing the course you will be ready to grab the opportunities 
-                in the IT Industry and you will be one step ahead to get a job and create a impact.
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-two"
-              >
-              What are the pre-requisities for these training?
-              </button>
-            </h2>
-            <div
-              id="question-two"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                There is no prior coding knowledge required, We will start from scratch. Only laptop and good internet connection required.
-              </div>
-            </div>
-          </div>
-          <!-- Item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-three"
-              >
-              Can I complete these courses along with my college or job?
-              </button>
-            </h2>
-            <div
-              id="question-three"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Yes, you can. We conduct classes only on weekends, so that you are not distrubted with your college routine in weekdays.
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-four"
-              >
-              Can I complete these courses from home?
-              </button>
-            </h2>
-            <div
-              id="question-four"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Yes, the training will be held completely online. There are no offline classes as of now.
-
-              </div>
-            </div>
-          </div>
-          <!-- Item 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-five"
-              >
-              Are the courses thaught only in kannada?
-              </button>
-            </h2>
-            <div
-              id="question-five"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                No, in both English and kannada. Our aim is to make you understandard and we will help you for that in every possible way If you have any doubt you can ask in the language you are comfortable with.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--************************************************  Accordian Ended  ********************************************************-->
-
-    <!--************************************************  Contact Section Started  ********************************************************-->
-    
-	<!-- <section class="contact section-padding" id="contact">
-		<div class="container mt-5 mb-5">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header text-center pb-5">
-						<h2>Contact Us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur<br>
-						adipisicing elit. Non, quo.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row m-0">
-				<div class="col-md-12 p-0 pt-4 pb-4">
-					for getting the form download the code from download button
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-      <section class="contact bg-light section-padding" id="contact">
-        <div class="container mt-5 mb-5">
-            <div class="row mb-5">
-                <div class="section-header col-md-12 mx-auto text-center">
-                  <h2>CONTACT US</h2>
-                  <p>For Any queries, Please get in touch with us.</p>
-                </div>
-            </div>
-
-            <form name="contact-form" action="https://formspree.io/f/meqwqkzn" method="POST"  class="row g-3 justify-content-center">
-                <div class="col-md-5">
-                    <input type="text" id="name" name="fname" class="form-control" placeholder="Full Name" >
-                </div>
-                <div class="col-md-5">
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter E-mail" >
-                </div>
-                <div class="col-md-10">
-                    <input type="text" id="phone" name="sub" class="form-control" placeholder="Enter Subject" >
-                </div>
-                <div class="col-md-10">
-                    <textarea name="message" cols="30" rows="4" class="form-control"
-                        placeholder="How can we help you?" required></textarea>
-                </div>
-                <div class="col-md-10 d-grid">
-                    <button type="submit" onclick="submitForm()" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-
-        </div>
-    </section>
-    
-    <!--************************************************  Contact Section Started  ********************************************************-->
-
-    <!--************************************************  Footer Section Started  ********************************************************-->
-
-    <footer id="footerContact" class="page-footer p-3 text-md-left bg-dark p-3 text-white">
-        <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 ">
-                    <h5 class="text-uppercase font-weight-bold mb-4">
-                        #BrandName
-                    </h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda.</p>
-                    <a href="#"><i class="bi bi-twitter  text-primary mx-2 "></i></a>
-                    <a href="#"><i class="bi bi-facebook  text-primary mx-2 "></i></a>
-                    <a href="#"><i class="bi bi-instagram  text-primary mx-2 "></i></a>
-                </div>
-                <div class="col-lg-2 col-md-2 mx-auto">
-                    <h5 class="text-uppercase font_weight-bold mb-4">Services</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-1"><a href="#">Web Design</a></li>
-                        <li class="mb-1"><a href="#">Web Development</a></li>
-                        <li class="mb-1"><a href="#">Java Development</a></li>
-                        <li class="mb-1"><a href="#">Python Development</a></li>
-                        <li class="mb-1"><a href="#">Software Design</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-2 mx-auto">
-                    <h5 class="text-uppercase font_weight-bold mb-4">Page Links</h5>
-                    <ul class="list-styled">
-                        <li class="mb-1"><a href="#">Home</a></li>
-                        <li class="mb-1"><a href="#">About</a></li>
-                        <li class="mb-1"><a href="#">Services</a></li>
-                        <li class="mb-1"><a href="#">Portfolio</a></li>
-                        <li class="mb-1"><a href="#">Team</a></li>
-                        <li class="mb-1"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-xs-12 location">
-                    <h5 class="text-uppercase font-weight-bold mb-4">Location</h5>
-                    <p class="d-flex align-items-center">
-                        <i class="bi bi-geo-alt text-primary mx-2 lead"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptate?.
-                    </p>
-                    <p class="d-flex align-items-center"><i class="bi bi-phone text-primary mx-2 lead"></i> (+91) 0123456789</p>
-                    <p class="d-flex align-items-center"><i class="bi bi-envelope text-primary mx-2 lead"></i> info@example.com</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-                        <!--***Bottom Footer***-->
-
-	<footer class="bg-dark p-3 text-white text-center position-relative">
-		<div class="container">
-			<p class="d-flex mb-0">Copyright &copy; 2023-24 #BrandName</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
-		</div>
-	</footer>
-
-    <!--************************************************  Footer Section Started  ********************************************************-->
-
-    <!--************************************************  Model Section Started  ********************************************************-->
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Demo Class Booking</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-            Please fill the Below form :
-
-                <form>
-                    <div class="form-group"><br>
-                        <label for="exampleFormControlInput1">Full Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="George Doe">
-                    </div><br>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div><br>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Mobile Number</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+91 012345678">
-                    </div><br>
-                    
-                    
-                    
-                </form>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-        </div>
-    </div>
-
-
-    <!--************************************************  Model Section Started  ********************************************************-->
+<!--***********************************************  About Section Started  *******************************************************-->
 	
-    <script>
-            function myFunction() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn");
+<section class="about section-padding bg-white" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-header text-center pb-3">
+					<h2>Place Where You Can Build Your Career ✨</h2>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-12">
+				<div class="about-img"><img alt="" class="img-fluid" src="img/about.gif"></div>
+			</div>
+			<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+				<div class="about-text">
+					<h4>Final Year is An High-Quality Training Platform
+					Services Ever.</h4><br>
+					<p>Motivated to transform and upskill collage students. Our Industry and real-world required based teaching 
+					   and training approach, will not only help students upskill but also grab the opportunities around them. We aim to provide job oriented cources at affordable price with best quality, providing coding knowledge especially to students from tire2 tier3, rural collage students and students from Non-IT branches</p>
+					<p class="collapse active" id="collapseExample3"> We at FINAL-YEAR give our best to help students to gain knowledge, mentor them and also students can reach us for any doubts, confusion regarding their career, we are always there for them by providing free career counselling to help understand their queries and try our best to help and guide them.
+					</p><a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" class="btn btn-primary">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read more";
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read less";
-                    moreText.style.display = "inline";
-                }
-            }
-	    function submitForm() {
-                // Get the first form with the name
-                // Usually the form name is not repeated
-                // but duplicate names are possible in HTML
-                // Therefore to work around the issue, enforce the correct index
-                var frm = document.getElementsByName('contact-form')[0];
-                frm.submit(); // Submit the form
-                frm.reset();  // Reset all form data
-                return false; // Prevent page refresh
-              }
-    </script>
+<!--************************************************  About Section Ended  ********************************************************-->
+
+<!--************************************************  Team Section Started  ********************************************************-->
+
+<section class="team section-padding bg-light" id="team">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-header text-dark text-center pb-5">
+					<h2>Meet Our Team Members</h2>
+					<p>Meet the team bheind Final-Year</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="card text-center">
+					<div class="card-body">
+						<img alt="" class="profile img-fluid rounded-circle" src="img/profile.jpg">
+						<h3 class="card-title py-2">Jack Wilson</h3>
+						<p class="card-text">Lorem ipsum, dolor</p>
+						<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="card text-center">
+					<div class="card-body">
+						<img alt="" class="profile img-fluid rounded-circle" src="img/profile.jpg">
+						<h3 class="card-title py-2">Jack Wilson</h3>
+						<p class="card-text">Lorem ipsum, dolor</p>
+						<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i><i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="card text-center">
+					<div class="card-body">
+						<img alt="" class="profile img-fluid rounded-circle" src="img/profile.jpg">
+						<h3 class="card-title py-2">Jack Wilson</h3>
+						<p class="card-text">Lorem ipsum, dolor</p>
+						<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="card text-center">
+					<div class="card-body">
+						<img alt="" class="profile img-fluid rounded-circle" src="img/profile.jpg">
+						<h3 class="card-title py-2">Jack Wilson</h3>
+						<p class="card-text">Lorem ipsum, dolor</p>
+						<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--************************************************  Team Section Started  ********************************************************-->
+
+<!--************************************************  Accordian Started  ********************************************************-->
+
+<!-- Question Accordion -->
+<section id="questions" class="p-5">
+  <div class="container">
+	<h2 class="text-center mb-4">Frequently Asked Questions</h2>
+	<div class="accordion accordion-flush" id="questions">
+	  <!-- Item 1 -->
+	  <div class="accordion-item">
+		<h2 class="accordion-header">
+		  <button
+			class="accordion-button collapsed"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#question-one"
+		  >
+		  What are the benefits of taking these courses?
+		  </button>
+		</h2>
+		<div
+		  id="question-one"
+		  class="accordion-collapse collapse"
+		  data-bs-parent="#questions"
+		>
+		  <div class="accordion-body">
+			In todays world everything is dependend on programming from creating a simple website to self-driving cars, this will
+			be your intoduction to the programming journey, by completing the course you will be ready to grab the opportunities 
+			in the IT Industry and you will be one step ahead to get a job and create a impact.
+		  </div>
+		</div>
+	  </div>
+	  <!-- Item 2 -->
+	  <div class="accordion-item">
+		<h2 class="accordion-header">
+		  <button
+			class="accordion-button collapsed"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#question-two"
+		  >
+		  What are the pre-requisities for these training?
+		  </button>
+		</h2>
+		<div
+		  id="question-two"
+		  class="accordion-collapse collapse"
+		  data-bs-parent="#questions"
+		>
+		  <div class="accordion-body">
+			There is no prior coding knowledge required, We will start from scratch. Only laptop and good internet connection required.
+		  </div>
+		</div>
+	  </div>
+	  <!-- Item 3 -->
+	  <div class="accordion-item">
+		<h2 class="accordion-header">
+		  <button
+			class="accordion-button collapsed"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#question-three"
+		  >
+		  Can I complete these courses along with my college or job?
+		  </button>
+		</h2>
+		<div
+		  id="question-three"
+		  class="accordion-collapse collapse"
+		  data-bs-parent="#questions"
+		>
+		  <div class="accordion-body">
+			Yes, you can. We conduct classes only on weekends, so that you are not distrubted with your college routine in weekdays.
+		  </div>
+		</div>
+	  </div>
+	  <!-- Item 4 -->
+	  <div class="accordion-item">
+		<h2 class="accordion-header">
+		  <button
+			class="accordion-button collapsed"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#question-four"
+		  >
+		  Can I complete these courses from home?
+		  </button>
+		</h2>
+		<div
+		  id="question-four"
+		  class="accordion-collapse collapse"
+		  data-bs-parent="#questions"
+		>
+		  <div class="accordion-body">
+			Yes, the training will be held completely online. There are no offline classes as of now.
+
+		  </div>
+		</div>
+	  </div>
+	  <!-- Item 5 -->
+	  <div class="accordion-item">
+		<h2 class="accordion-header">
+		  <button
+			class="accordion-button collapsed"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#question-five"
+		  >
+		  Are the courses thaught only in kannada?
+		  </button>
+		</h2>
+		<div
+		  id="question-five"
+		  class="accordion-collapse collapse"
+		  data-bs-parent="#questions"
+		>
+		  <div class="accordion-body">
+			No, in both English and kannada. Our aim is to make you understandard and we will help you for that in every possible way If you have any doubt you can ask in the language you are comfortable with.
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</section>
+
+<!--************************************************  Accordian Ended  ********************************************************-->
+
+<!--************************************************  Contact Section Started  ********************************************************-->
     
-    
-    
-    <!-- footer ends -->
-	
-    <!--
+<section class="contact bg-light section-padding" id="contact">
+	<div class="container mt-5 mb-5">
+		<div class="row mb-5">
+			<div class="section-header col-md-12 mx-auto text-center">
+			  <h2>CONTACT US</h2>
+			  <p>For Any queries, Please get in touch with us.</p>
+			</div>
+			<div id="liveAlertPlaceholder"></div>
+		</div>
+		<div class="container">
+		  <form name="contact-form" action="https://formspree.io/f/meqwqkzn" method="POST"  class="row g-3 justify-content-center">
+			<div class="col-md-5">
+				<input type="text" id="name" name="fname" class="form-control" placeholder="Full Name" >
+			</div>
+			<div class="col-md-5">
+				<input type="email" id="email" name="email" class="form-control" placeholder="Enter E-mail" >
+			</div>
+			<div class="col-md-10">
+				<input type="text" id="phone" name="sub" class="form-control" placeholder="Enter Subject" >
+			</div>
+			<div class="col-md-10">
+				<textarea name="message" cols="30" rows="4" class="form-control"
+					placeholder="How can we help you?" required></textarea>
+			</div>
+			<div class="col-md-10 d-grid">
+				<button id="liveAlertBtn" type="submit" onclick="submitForm()" class="btn btn-primary">Submit</button>
+				<!-- <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button> -->
+			</div>
+		</form>
+		</div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><span class="text-warning"></span>FINAL YEAR</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+	</div>
+</section>
+
+<!--************************************************  Contact Section Started  ********************************************************-->
+
+<!--************************************************  Footer Section Started  ********************************************************-->
+
+<footer id="footerContact" class="page-footer p-3 text-md-left bg-dark p-3 text-white">
+	<div class="container py-5">
+		<div class="row g-4">
+			<div class="col-lg-3 col-md-6 ">
+				<h5 class="text-uppercase font-weight-bold mb-4">
+					#BrandName
+				</h5>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda.</p>
+				<a href="#"><i class="bi bi-twitter  text-primary mx-2 "></i></a>
+				<a href="#"><i class="bi bi-facebook  text-primary mx-2 "></i></a>
+				<a href="#"><i class="bi bi-instagram  text-primary mx-2 "></i></a>
+			</div>
+			<div class="col-lg-2 col-md-2 mx-auto">
+				<h5 class="text-uppercase font_weight-bold mb-4">Services</h5>
+				<ul class="list-unstyled">
+					<li class="mb-1"><a href="#">Web Design</a></li>
+					<li class="mb-1"><a href="#">Web Development</a></li>
+					<li class="mb-1"><a href="#">Java Development</a></li>
+					<li class="mb-1"><a href="#">Python Development</a></li>
+					<li class="mb-1"><a href="#">Software Design</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-xs-12 location">
+				<h5 class="text-uppercase font-weight-bold mb-4">Location</h5>
+				<p class="d-flex align-items-center">
+					<i class="bi bi-geo-alt text-primary mx-2 lead"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptate?.
+				</p>
+				<p class="d-flex align-items-center"><i class="bi bi-phone text-primary mx-2 lead"></i> (+91) 0123456789</p>
+				<p class="d-flex align-items-center"><i class="bi bi-envelope text-primary mx-2 lead"></i> info@example.com</p>
+			</div>
+		</div>
+	</div>
+</footer>
+					<!--***Bottom Footer***-->
+
+<footer class="bg-dark p-3 text-white text-center position-relative">
+	<div class="container">
+		<p class="d-flex mb-0">Copyright &copy; 2023-24 #BrandName</p>
+		<a href="#" class="position-absolute bottom-0 end-0 p-5">
+			<i class="bi bi-arrow-up-circle h1"></i>
+		</a>
+	</div>
+</footer>
+
+<!--************************************************  Footer Section Started  ********************************************************-->
+
+<!--************************************************  Model Section Started  ********************************************************-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+		<h5 class="modal-title" id="exampleModalLongTitle">Demo Class Booking</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>
+		<div class="modal-body">
+		Please fill the Below form :
+
+			<form action="https://formspree.io/f/mvonorvp" method="POST">
+				<div class="form-group"><br>
+					<label for="exampleFormControlInput1">Full Name</label>
+					<input type="name" name="FullName" class="form-control" id="exampleFormControlInput1" placeholder="George Doe">
+				</div><br>
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Email address</label>
+					<input type="email" name="EmailId" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				</div><br>
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Mobile Number</label>
+					<input type="text" name="MobileNumber" class="form-control" id="exampleFormControlInput1" placeholder="+91 012345678">
+				</div><br>
+				
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+				
+			</form>
+		</div>
+		
+	</div>
+	</div>
+</div>
 
 
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/img1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Book A Free Live Class</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              <p><a href="#" class="btn btn-warning mt3">Book Class</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/img2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Request A Call</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-              <p><a href="#" class="btn btn-warning mt3">Book Class</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/img3.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-              <p><a href="#" class="btn btn-warning mt3">Book Class</a></p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+<!--************************************************  Model Section Started  ********************************************************-->
 
-      -->
-    
+<script>
+		function myFunction() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			}
+		  }
+		  function submitForm() {
+			var frm = document.getElementsByName('contact-form')[0];
+			frm.submit(); // Submit the form
+			frm.reset();  // Reset all form data
+			return true; // Prevent page refresh
+		  }
+</script>
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		$('#btnSubmit').show();
+	});
+
+	$('#linkClose').click(function () {
+		$('#myAlert').hide();
+	});
+
+</script>
+<script>
+  var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  var alertTrigger = document.getElementById('liveAlertBtn')
+
+  function alert(message, type) {
+	var wrapper = document.createElement('div')
+	wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+	alertPlaceholder.append(wrapper)
+  }
+
+  if (alertTrigger) {
+	alertTrigger.addEventListener('click', function () {
+	  alert('Nice, you triggered this alert message!', 'success')
+	})
+  }
+</script>
+
+
+<!--******************************************* footer ends**************************************************************** -->
+
+
+	<!-- All Js -->
+	<script src="js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
